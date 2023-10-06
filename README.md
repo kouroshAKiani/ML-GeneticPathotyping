@@ -40,5 +40,5 @@ To get started with this repository, follow these installation steps:
  
    ```bash
    cd /path/to/your_directory
-
+   '''unbash
 ### 2. Selecting a target variable (gene / pathotype) for prediction
