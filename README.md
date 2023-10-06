@@ -33,3 +33,12 @@ To get started with this repository, follow these installation steps:
    ```bash
    git clone https://github.com/kouroshAKiani/ML-GeneticPathotyping.git
 
+## Usage
+
+### 1. Preparation:
+ Download the dataset (mach-learn.xlsx) and the repository file in your directory. Change your work directory to the path that the files and dataset have been saved:
+ 
+   ```bash
+   cd /path/to/your_directory
+
+### 2. Selecting a target variable (gene / pathotype) for prediction
