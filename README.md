@@ -20,9 +20,9 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 
 - **ML Algorithms**: We utilize various machine learning algorithms, such as LR, NBC, LDA, SVM, and CatBoost, to perform gene and pathotype prediction and classification tasks.
 
-- **Feature Selection**: We offer three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach through the DALEX package, to identify crucial antibiotics for gene and pathotype prediction.
+- **Feature Selection**: We offer three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach through the DALEX package, to identify crucial antibiotics for gene and pathotype detection.
 
-- **Evaluation Metrics**: Due to our goal for predicting presence of genes or pathotypes, thus, Sensitivity, precision, and F1-Score are included to assess the performance of our models, ensuring reliable predictions. However, other metrcis like Accuracy and Specificity are reported.
+- **Evaluation Metrics**: Due to our goal for predicting presence of genes or pathotypes, thus, Sensitivity, precision, and F1-Score are included to assess the performance of our models, ensuring reliable detections. However, other metrcis like Accuracy and Specificity are reported.
 
 ## Installation
 
