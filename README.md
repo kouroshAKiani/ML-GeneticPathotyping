@@ -50,7 +50,7 @@ To get started with this repository, clone the repository to your local machine:
 For example if you want to inspect model-agnostic approach in LR for prediction of blaOXA-48, you should execute following command in your command-line (terminal):
  
 ```bash
-   Rscript blaOXA-48.R -f mach-learn.xlsx -t "model_evaluation" -o "LR-Chi Squared test"
+   Rscript blaOXA-48.R -f mach-learn.xlsx -t "feature_selection" -m "model agnostic-LR"
 ```
 
 
