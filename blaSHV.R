@@ -231,7 +231,7 @@ if (!is.null(task)) {
                               ranges = list(cost = seq(0.001, 10, length = 20)
                                             , gamma = seq(0, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out))
       
       model_svm_SHV = svm(SHV_gene ~ Amikacin + Cefotaxime + Gentamicin + Imipenem +
@@ -261,7 +261,7 @@ if (!is.null(task)) {
                                , data = train, kernel = "sigmoid", tunecontrol=tune.control(cross=10),
                                ranges = list(cost = seq(0.001, 5, length = 20)
                                              , gamma = seq(0, 5, length = 20)))
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out2))
       
       model_svm_SHV2 = svm(SHV_gene ~ Cefepime + Aztreonam + Ceftazidime, data = train, 
@@ -289,7 +289,7 @@ if (!is.null(task)) {
                                ranges = list(cost = seq(0.001, 5, length = 20)
                                              , gamma = seq(0, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out3))
       
       model_svm_SHV3 = svm(SHV_gene ~ Cefotaxime, data = train, 
@@ -321,7 +321,7 @@ if (!is.null(task)) {
                                ranges = list(degree = c(1, 2, 3), cost = seq(0.1, 10, length = 20)
                                              , gamma = seq(0.1, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out4))
       
       model_svm_SHV4 = svm(SHV_gene ~ Amikacin + Cefotaxime + Gentamicin + Imipenem +
@@ -351,7 +351,7 @@ if (!is.null(task)) {
                                ranges = list(cost = seq(0.1, 5, length = 20), degree = c(1, 2, 3)
                                              , gamma = seq(0.1, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out5))
       
       # Tuned hyper-parameters are placed in the model.
@@ -381,7 +381,7 @@ if (!is.null(task)) {
                                ranges = list(cost = seq(0.001, 5, length = 20), degree = c(1, 2, 3)
                                              , gamma = seq(0, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out6))
       
       model_svm_SHV6 = svm(SHV_gene ~ Cefotaxime, data = train, 
@@ -446,7 +446,7 @@ if (!is.null(task)) {
                                   tuneGrid =  grid,
                                   trControl = fitControl)
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(model_catboost_SHV$bestTune)  
       
       #Prediction on test (CatBoost)----------------------------------------------------
@@ -503,7 +503,7 @@ if (!is.null(task)) {
                                    tuneGrid =  grid2,
                                    trControl = fitControl2)
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(model_catboost2_SHV$bestTune)  
       
       test$cat_SHV1 = predict(model_catboost2_SHV, test)
@@ -557,7 +557,7 @@ if (!is.null(task)) {
                                    tuneGrid =  grid3,
                                    trControl = fitControl3)
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(model_catboost3_SHV$bestTune)  
       
       test$cat_SHV2 = predict(model_catboost3_SHV, test)
@@ -694,7 +694,7 @@ if (!is.null(task)) {
                             ranges = list(cost = seq(0.001, 10, length = 20)
                                           , gamma = seq(0, 5, length = 20)))
     
-    cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+    cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
     print(summary(tune_out))
     
     model_svm_SHV = svm(SHV_gene ~ Amikacin + Cefotaxime + Gentamicin + Imipenem +
