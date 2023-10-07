@@ -37,18 +37,21 @@ To get started with this repository, clone the repository to your local machine:
  Download the dataset (mach-learn.xlsx) and the code files in your directory. Change your work directory to the path that the files and dataset have been saved:
 
     ```bash
-    cd /path/to/your_directory ```
+    cd /path/to/your_directory 
+    ```
 
 ### 2. Feature Selection:
  Choose one of the feature selection methods provided in the repository and run it on your dataset to select the most important antibiotics as follow:
 
 ```bash
-   Rscript gene / pathotype name.R -f mach-learn.xlsx -t "feature_selection" -m "feature selection method" ```
+   Rscript gene / pathotype name.R -f mach-learn.xlsx -t "feature_selection" -m "feature selection method"
+```
 
 For example if you want to inspect model-agnostic approach in LR for prediction of blaOXA-48, you should execute following command in your command-line (terminal):
  
 ```bash
-   Rscript blaOXA-48.R -f mach-learn.xlsx -t "model_evaluation" -o "LR-Chi Squared test" ```
+   Rscript blaOXA-48.R -f mach-learn.xlsx -t "model_evaluation" -o "LR-Chi Squared test"
+```
 
 
 
