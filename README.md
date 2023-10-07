@@ -26,9 +26,7 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 
 ## Installation
 
-To get started with this repository, follow these installation steps:
-
-1. Clone the repository to your local machine:
+To get started with this repository, clone the repository to your local machine:
 
    ```bash
    git clone https://github.com/kouroshAKiani/ML-GeneticPathotyping.git
@@ -36,9 +34,19 @@ To get started with this repository, follow these installation steps:
 ## Usage
 
 ### 1. Preparation:
- Download the dataset (mach-learn.xlsx) and the repository file in your directory. Change your work directory to the path that the files and dataset have been saved:
- 
-   ```bash
+ Download the dataset (mach-learn.xlsx) and the code files in your directory. Change your work directory to the path that the files and dataset have been saved:
+
+    ```bash
    cd /path/to/your_directory
+
+### 2. Feature Selection:
+ Choose one of the feature selection methods provided in the repository and run it on your dataset to select the most important antibiotics as follow:
+
+```bash
+   Rscript gene / pathotype name.R -f mach-learn.xlsx -t "feature_selection" -m "feature selection method"
+
+
+
    
-### 2. Selecting a target variable (gene / pathotype) for prediction
+   
+
