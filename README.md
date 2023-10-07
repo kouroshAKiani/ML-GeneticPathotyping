@@ -29,7 +29,7 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 To get started with this repository, clone the repository to your local machine:
 
    ```bash
-   'git clone https://github.com/kouroshAKiani/ML-GeneticPathotyping.git'
+   'git clone' https://github.com/kouroshAKiani/ML-GeneticPathotyping.git
 
 ## Usage
 
