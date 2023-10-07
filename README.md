@@ -36,9 +36,9 @@ To get started with this repository, clone the repository to your local machine:
 ### 1. Preparation:
  Download the dataset (mach-learn.xlsx) and the code files in your directory. Change your work directory to the path that the files and dataset have been saved:
 
-    ```bash
+```bash
     cd /path/to/your_directory
-    ```
+   ```
 
 ### 2. Feature Selection:
  Choose one of the feature selection methods provided in the repository and run it on your dataset to select the most important antibiotics as follow:
