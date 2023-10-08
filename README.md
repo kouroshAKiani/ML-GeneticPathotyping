@@ -79,8 +79,18 @@ For example if you want to inspect model-agnostic approach in LR for prediction 
 ```bash
    Rscript blaOXA-48.R -f mach-learn.xlsx -t "feature_selection" -m "model agnostic-LR"
 ```
+List of feature selection methods for more investigations are as follow:
 
+Chi-Squared test, Wald test, model agnostic-LR, model agnostic-NBC, model agnostic-LDA, model agnostic-Sig SVM, model agnostic-Poly SVM, model agnostic-CatBoost
 
+for example if you want to review the results of Pearson's Chi-Squared test, you should execute following command in your terminal:
+
+```bash
+   Rscript blaOXA-48.R -f mach-learn.xlsx -t "feature_selection" -m "Chi-Squared test"
+```
+
+### 2. Model training and evaluation:
+ Choose one of the feature selection methods provided in the repository and run it on your dataset to select the most important antibiotics as follow:
 
    
    
