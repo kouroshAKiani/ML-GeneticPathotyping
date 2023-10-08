@@ -6,6 +6,7 @@ This repository contains code and resources for predicting and classifying antim
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
@@ -23,6 +24,32 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 - **Feature Selection**: We offer three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach through the DALEX package, to identify crucial antibiotics for gene and pathotype detection.
 
 - **Evaluation Metrics**: Due to our goal for predicting presence of genes or pathotypes, thus, Sensitivity, precision, and F1-Score are included to assess the performance of our models, ensuring reliable detections. However, other metrcis like Accuracy and Specificity are reported.
+
+## Requirements
+
+The method is developed in R (4.2.2) and the following packages can be installed as follow:
+
+```bash
+install_and_load_package <- function(package) {
+  if (!(package %in% installed.packages()[,"Package"])) {
+    install.packages(package)
+  }
+  library(package, character.only = TRUE)
+}
+
+required_packages <- c(
+  "readxl", "gbm", "DiagrammeR", "DiagrammeRsvg", "Rcpp", "rpart",
+  "rpart.plot", "randomForest", "corrplot", "ModelMetrics", "ROCR", "caret",
+  "mlbench", "kernlab", "e1071", "MASS", "klaR", "dplyr", "naivebayes",
+  "DescTools", "pROC", "rsample", "titanic", "funModeling", "GA", "DALEX", "optparse",
+  "plotly", "ggplot2", "smotefamily", "ingredients","r2d3","ROSE", "patchwork", "devtools", "ggpubr",
+  "catboost", "devEMF"
+)
+
+for (package in required_packages) {
+  install_and_load_package(package)
+}
+```
 
 ## Installation
 
