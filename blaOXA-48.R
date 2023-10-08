@@ -322,7 +322,7 @@ if (!is.null(task)) {
                                     ranges = list(cost = seq(0.1, 5, length = 20)
                                                   , gamma = seq(0.1, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out_OXA48))
       
       model_svm_OXA48 = svm(OXA48_gene ~ Amikacin + Cefotaxime + Gentamicin + Imipenem +
@@ -352,7 +352,7 @@ if (!is.null(task)) {
                                      , data = train_strat_OXA48, kernel = "sigmoid", tunecontrol=tune.control(cross=10),
                                      ranges = list(cost = seq(0.1, 5, length = 20)
                                                    , gamma = seq(0.1, 5, length = 20)))
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out2_OXA48))
       
       model_svm2_OXA48 = svm(OXA48_gene ~ Meropenem + Imipenem, data = train_strat_OXA48, 
@@ -378,7 +378,7 @@ if (!is.null(task)) {
                                      ranges = list(cost = seq(0.1, 5, length = 20)
                                                    , gamma = seq(0.1, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out3_OXA48))
       
       model_svm3_OXA48 = svm(OXA48_gene ~ Meropenem, data = train_strat_OXA48, 
@@ -409,7 +409,7 @@ if (!is.null(task)) {
                                      ranges = list(degree = c(1, 2, 3), cost = seq(0.1, 5, length = 20)
                                                    , gamma = seq(0.1, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out4_OXA48))
       
       # Tuned hyper-parameters are placed in the model.
@@ -442,7 +442,7 @@ if (!is.null(task)) {
                                           ranges = list(cost = seq(0.1, 5, length = 20), degree = c(1, 2, 3)
                                                         , gamma = seq(0.1, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out4dalex_OXA48))
       
       model_svm4dalex_OXA48 = svm(OXA48_gene ~ Meropenem + Imipenem, data = train_strat_OXA48, 
@@ -473,7 +473,7 @@ if (!is.null(task)) {
                                      ranges = list(cost = seq(0.1, 5, length = 20), degree = c(1, 2, 3)
                                                    , gamma = seq(0.1, 5, length = 20)))
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(summary(tune_out5_OXA48))
       
       model_svm5_OXA48 = svm(OXA48_gene ~ Meropenem , data = train_strat_OXA48, 
@@ -537,7 +537,7 @@ if (!is.null(task)) {
                                     tuneGrid =  grid,
                                     trControl = fitControl)
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(model_catboost_OXA48$bestTune)  
       
       #Prediction on test_strat_OXA48 (CatBoost)----------------------------------------------------
@@ -591,7 +591,7 @@ if (!is.null(task)) {
                                      tuneGrid =  grid2,
                                      trControl = fitControl2)
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(model_catboost2_OXA48$bestTune)  
       
       test_strat_OXA48$cat1 = predict(model_catboost2_OXA48, test_strat_OXA48)
@@ -646,7 +646,7 @@ if (!is.null(task)) {
                                trControl = fitControl3)
       
       
-      cat("Tuned hyper-parameters throgh 10-Fold Cross Validation:\n")
+      cat("Tuned hyper-parameters through 10-Fold Cross Validation:\n")
       print(model_catboost2_OXA48$bestTune)  
       
       test_strat_OXA48$cat = predict(model_catboost3, test_strat_OXA48)
