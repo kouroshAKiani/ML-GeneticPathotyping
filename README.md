@@ -83,10 +83,10 @@ List of feature selection methods for more investigations are as follow:
 
 Chi-Squared test, Wald test, model agnostic-LR, model agnostic-NBC, model agnostic-LDA, model agnostic-Sig SVM, model agnostic-Poly SVM, model agnostic-CatBoost
 
-for example if you want to review the results of Pearson's Chi-Squared test, you should execute following command in your terminal:
+for example if you want to review the results of Pearson's Chi-Squared test in the case of detection of blaSHV gene, you should execute following command in your terminal:
 
 ```bash
-   Rscript blaOXA-48.R -f mach-learn.xlsx -t "feature_selection" -m "Chi-Squared test"
+   Rscript blaSHV.R -f mach-learn.xlsx -t "feature_selection" -m "Chi-Squared test"
 ```
 
 ### 2. Model training and evaluation:
