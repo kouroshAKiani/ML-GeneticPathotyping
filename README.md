@@ -90,7 +90,7 @@ for example if you want to review the results of Pearson's Chi-Squared test in t
 ```
 
 ### 2. Model training and evaluation:
- Choose one of the feature selection methods provided in the repository and run it on your dataset to select the most important antibiotics as follow:
+
 
    
    
