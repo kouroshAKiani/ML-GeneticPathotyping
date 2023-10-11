@@ -71,7 +71,7 @@ To get started with this repository, clone the repository to your local machine:
  Choose one of the feature selection methods provided in the repository and run it on your dataset to select the most important antibiotics as follow:
 
 ```bash
-   Rscript gene / pathotype name.R -f mach-learn.xlsx -t "feature_selection" -m "feature selection method"
+   Rscript gene/pathotype name.R -f mach-learn.xlsx -t "feature_selection" -m "feature selection method"
 ```
 
 For example if you want to inspect model-agnostic approach in LR for prediction of blaOXA-48, you should execute following command in your command-line (terminal):
