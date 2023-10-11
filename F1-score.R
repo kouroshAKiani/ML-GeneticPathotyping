@@ -1,7 +1,8 @@
-## Computation of F1 score and its confidence interval ##
+## Computation of F1 score and its confidence interval for binomial classification ##
+
+# F1-Score confidence interval in a binomial classification has been computed considering following article but this article has computed F1-Score confidence interval in a multi-class problem. So we have changed their code for applying to a binomial classification problem. 
 
 ## Takahashi K, Yamamoto K, Kuchiba A, Koyama T. Confidence interval for micro-averaged F1 and macro-averaged F1 scores.  Appl Intell (Dordr). 2022 Mar;52(5):4961-4972. doi: 10.1007/s10489-021-02635-5. Epub 2021 Jul 31.
-
 ## PMID: 35317080
 ## PMCID: PMC8936911
 ## https://doi.org/10.1007%2Fs10489-021-02635-5
