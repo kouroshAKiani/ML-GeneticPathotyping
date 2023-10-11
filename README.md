@@ -114,7 +114,7 @@ Performance of all the models based on the sensitivity, precision, and F1-Score 
 
 This project was made possible thanks to the contributions of the following individuals:
 
-- [Kourosh Alizadeh Kiani](https://github.com/yourusername)
+- [Kourosh Alizadeh Kiani](https://github.com/kouroshAKiani)
 - [Mehdi Soroush](https://github.com/author2username)
 - [Seyed Ahmad Sanikhani](https://github.com/author3username)
 - [Sajad Tavakoli](https://github.com/sajadtavakoli) 
