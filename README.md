@@ -1,6 +1,6 @@
 # Antimicrobial Resistance Gene and Pathotype Prediction (R)
 
-This repository contains code and resources for predicting and classifying antimicrobial resistance (AMR) genes and pathotypes based on antibiotic susceptibility data through R language. We employ multiple machine learning algorithms, including Logistic Regression (LR), Naive Bayes Classifier (NBC), Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), and CatBoost, for the prediction and classification tasks. Additionally, we apply three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach using the DALEX package, to identify the most important antibiotics for each gene and pathotype prediction
+This repository contains code and resources for predicting and classifying antimicrobial resistance (AMR) genes and pathotypes based on antibiotic susceptibility data through R and Python. We employ multiple machine learning algorithms, including Logistic Regression (LR), Naive Bayes Classifier (NBC), Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), and CatBoost, for the prediction and classification tasks. Additionally, we apply three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach using the DALEX package, to identify the most important antibiotics for each gene and pathotype prediction
 
 ## Table of Contents
 
@@ -10,7 +10,7 @@ This repository contains code and resources for predicting and classifying antim
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Contributing](#contributing)
+- [Authors](#Authors)
 - [License](#license)
 
 ## Introduction
@@ -27,7 +27,7 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 
 ## Requirements
 
-The method is developed in R (4.2.2) and the following packages can be installed as follow:
+The method is developed in R (4.2.2) and python and the following packages can be installed as follow:
 
 ```bash
 install_and_load_package <- function(package) {
@@ -89,10 +89,41 @@ for example if you want to review the results of Pearson's Chi-Squared test in t
    Rscript blaSHV.R -f mach-learn.xlsx -t "feature_selection" -m "Chi-Squared test"
 ```
 
-### 2. Model training and evaluation:
-In order to investigate ML models performance that are reported in tables 2 to 11 in the article, you should choose the algorithm and the feature selection method that results in intended antibiotic combination in the algorithm. For this purpose you should consider following command in your command-line:
+### 3. Model training and evaluation:
+In order to investigate ML models performance that are reported in tables 2 to 11 in the article, you should choose the algorithm and the feature selection methods based on the intended antibiotic(s) combination. For this purpose you should follow below command in your command-line:
 
+```bash
+   Rscript blaSHV.R -f mach-learn.xlsx -t "model_evaluation" -o "algorithm name-feature selection method name"
+```
 
+It should be noted that feature selection methods names have been introduced before, in part 2 (feature selection). Moreoever, if there are two methods resulting in the same antibiotic(s) combination (according to tables 2 to 11), then you can consider following objects to replace with feature selection method name:
+
+if model-agnostic approach and Wald result in the same antibiotic(s) combination, you should replace "feature selection method name" with "model agnostic/Wald test". Moreover, if Chi-Squared test and the Wald test results are the same, then you should replace "feature selection method name" with "Chi Squared test/Wald test".
+
+For example if the antibiotic(s) combination selected through the model-agnostic approach in LR and the Wald test are the same, you can follow below command:
+
+```bash
+   Rscript blaSHV.R -f mach-learn.xlsx -t "model_evaluation" -o "LR-model agnostic/Wald test"
+```
+
+## Results
+
+Performance of all the models based on the sensitivity, precision, and F1-Score are represented in the tables 2 to 11. Additionally, 
+
+## Authors
+
+This project was made possible thanks to the contributions of the following individuals:
+
+- [Kourosh Alizadeh Kiani](https://github.com/yourusername)
+- [Mehdi Soroush](https://github.com/author2username)
+- [Seyed Ahmad Sanikhani](https://github.com/author3username)
+- [Sajad Tavakoli](https://github.com/sajadtavakoli) 
+
+Special thanks to all the contributors for their hard work and dedication to this project.
+
+## License
+
+This project is licensed under the MIT License.
    
    
 
