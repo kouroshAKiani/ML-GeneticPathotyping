@@ -79,9 +79,9 @@ For example if you want to inspect model-agnostic approach in LR for prediction 
 ```bash
    Rscript blaOXA-48.R -f mach-learn.xlsx -t "feature_selection" -m "model agnostic-LR"
 ```
-List of feature selection methods for more investigations are as follow:
+You can examine other feature selection methods by replacing one of the following items with "model agnostic-LR" in the above-mentioned command.
 
-Chi-Squared test, Wald test, model agnostic-LR, model agnostic-NBC, model agnostic-LDA, model agnostic-Sig SVM, model agnostic-Poly SVM, model agnostic-CatBoost
+Chi-Squared test, Wald test, model agnostic-NBC, model agnostic-LDA, model agnostic-Sig SVM, model agnostic-Poly SVM, model agnostic-CatBoost
 
 for example if you want to review the results of Pearson's Chi-Squared test in the case of detection of blaSHV gene, you should execute following command in your terminal:
 
