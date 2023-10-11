@@ -90,6 +90,7 @@ for example if you want to review the results of Pearson's Chi-Squared test in t
 ```
 
 ### 2. Model training and evaluation:
+In order to investigate ML models performance that are reported in tables 2 to 11 in the article, you should choose the algorithm and the feature selection method that results in intended antibiotic combination in the algorithm. For this purpose you should consider following command in your command-line:
 
 
    
