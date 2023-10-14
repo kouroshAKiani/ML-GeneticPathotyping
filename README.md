@@ -1,4 +1,4 @@
-# Antimicrobial Resistance Gene and Pathotype Prediction (R)
+# Antimicrobial Resistance Gene and Pathotype Prediction
 
 This repository contains code and resources for predicting and classifying antimicrobial resistance (AMR) genes and pathotypes based on antibiotic susceptibility data through R and Python. We employ multiple machine learning algorithms, including Logistic Regression (LR), Naive Bayes Classifier (NBC), Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), and CatBoost, for the prediction and classification tasks. Additionally, we apply three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach using the DALEX package, to identify the most important antibiotics for each gene and pathotype prediction
 
@@ -115,8 +115,8 @@ Performance of all the models based on the sensitivity, precision, and F1-Score 
 This project was made possible thanks to the contributions of the following individuals:
 
 - [Kourosh Alizadeh Kiani](https://github.com/kouroshAKiani)
-- [Mehdi Soroush](https://github.com/author2username)
-- [Seyed Ahmad Sanikhani](https://github.com/author3username)
+- [Mehdi Soroush](https://github.com/MehdiSoroush)
+- [Seyed Ahmad Sanikhani](https://github.com/AhmadSanikhani)
 - [Sajad Tavakoli](https://github.com/sajadtavakoli) 
 
 Special thanks to all the contributors for their hard work and dedication to this project.
