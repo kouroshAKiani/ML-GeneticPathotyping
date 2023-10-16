@@ -27,7 +27,7 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 
 ## Requirements
 
-The method is developed in R (4.2.2) and python and the following packages can be installed as follow:
+The method is developed in R (4.2.2) and Python (3.7) and the following packages can be installed as follow in R:
 
 ```bash
 install_and_load_package <- function(package) {
