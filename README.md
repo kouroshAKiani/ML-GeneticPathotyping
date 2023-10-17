@@ -15,7 +15,7 @@ This repository contains code and resources for predicting and classifying antim
 
 ## Introduction
 
-Antimicrobial resistance is a pressing global health concern. This project leverages R and a range of machine learning techniques to predict and classify AMR genes and pathotypes using antibiotic susceptibility data. Our objective is to provide a robust tool that helps identify important antibiotics associated with specific genes and pathotypes.
+Antimicrobial resistance is a pressing global health concern. This project leverages a range of machine learning techniques to predict and classify AMR genes and pathotypes using antibiotic susceptibility data. Our objective is to provide a robust tool that helps identify important antibiotics associated with specific genes and pathotypes.
 
 ## Features
 
