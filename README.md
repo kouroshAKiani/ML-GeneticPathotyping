@@ -1,6 +1,6 @@
 # Antimicrobial Resistance Gene and Pathotype Prediction
 
-This repository contains code and resources for predicting and classifying antimicrobial resistance (AMR) genes and pathotypes based on antibiotic susceptibility data through R. Moreover, data distribution in section 2 of the article is visualized through Python. We employ multiple machine learning algorithms, including Logistic Regression (LR), Naive Bayes Classifier (NBC), Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), and CatBoost, for the prediction and classification tasks. Additionally, we apply three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach using the DALEX package, to identify the most important antibiotics for each gene and pathotype prediction
+This repository contains code and resources for predicting and classifying antimicrobial resistance (AMR) genes and pathotypes based on antibiotic susceptibility data through R. Moreover, data distribution in section 2 of the article is visualized through Python. We employ multiple machine learning algorithms, including Logistic Regression (LR), Naive Bayes Classifier (NBC), Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), and CatBoost, for the prediction and classification tasks. Additionally, we apply three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach using the DALEX package, to identify the most important antibiotics for each gene and pathotype prediction.
 
 ## Table of Contents
 
@@ -10,8 +10,9 @@ This repository contains code and resources for predicting and classifying antim
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Authors](#Authors)
+- [Authors](#authors)
 - [License](#license)
+- [Reference](#reference)
 
 ## Introduction
 
@@ -83,7 +84,7 @@ For example if the antibiotic(s) combination selected through the model-agnostic
 ```bash
    Rscript blaSHV.R -f mach-learn.xlsx -t "model_evaluation" -o "LR-model agnostic/Wald test"
 ```
-It should be noted that, computation of confidence interval for F1-Score for multi-class classification has been done by [1]. By getting inspiration from this work and applying some changes to their computations, we can extract a function for computation of F1-Score and its confidence interval in a binary classification
+We should emphasize that computation of confidence interval for F1-Score for multi-class classification has been done by [1]. By getting inspiration from this work and applying some changes to their computations, we can extract a function for computation of F1-Score and its confidence interval in a binary classification that is provided in F1-score.R file.
 
 ## Results
 
@@ -104,5 +105,7 @@ Special thanks to all the contributors for their hard work and dedication to thi
 
 This project is licensed under the MIT License.
    
-   
+## Reference
+1. Takahashi K, Yamamoto K, Kuchiba A, Koyama T. Confidence interval for micro-averaged F1 and macro-averaged F1 scores.  Appl Intell (Dordr). 2022 Mar;52(5):4961-4972. doi: 10.1007/s10489-021-02635-5. Epub 2021 Jul 31.
+
 
