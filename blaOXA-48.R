@@ -1,26 +1,8 @@
-# package installation and loading code using the install_and_load_package function.
-install_and_load_package <- function(package) {
-  if (!(package %in% installed.packages()[,"Package"])) {
-    install.packages(package)
-  }
-  library(package, character.only = TRUE)
-}
+source('F1-score.R') # Call F1-Score function for computing point estimation and its 95% confidence interval
 
-required_packages <- c(
-  "readxl", "gbm", "DiagrammeR", "DiagrammeRsvg", "Rcpp", "rpart",
-  "rpart.plot", "randomForest", "corrplot", "ModelMetrics", "ROCR", "caret",
-  "mlbench", "kernlab", "e1071", "MASS", "klaR", "dplyr", "naivebayes",
-  "DescTools", "pROC", "rsample", "titanic", "funModeling", "GA", "DALEX", "optparse",
-  "plotly", "ggplot2", "smotefamily", "ingredients","r2d3","ROSE", "patchwork", "devtools", "ggpubr",
-  "catboost", "devEMF"
-)
+source('compute_metrics.R') # Call compute_metrics function for computing all classification metrics and their confidence interval.
 
-for (package in required_packages) {
-  install_and_load_package(package)
-}
-
-source('F1-score.R')
-source('compute_metrics.R')
+source('Packages_installation.R') # Installation of all required packages
 
 parser <- OptionParser(option_list = list(
   make_option(c("-f", "--file_path"), type="character", help="The file path of the data file."),
@@ -76,12 +58,7 @@ cat("test set dimensions:", dim(test_strat_OXA48), "\n")
 
 if (!is.null(task)) {
   if (task == "model_evaluation") {
-    # Task: Model Evaluation
-    # You can add flags for specific model evaluation methods to use, e.g., --model_evaluation=confusion_matrix or --model_evaluation=roc_auc.
-    # Perform the selected model evaluation method based on the provided flags.
-    # Example: If user passes --model_evaluation=confusion_matrix, evaluate the model using confusion matrix.
-    # If user passes --model_evaluation=roc_auc, evaluate the model using ROC AUC.
-    # ...
+
     if (model == "LR-Chi Squared test"){
       # Logistic regression (Model 1)--------------------------------------------------
       model_Log1_OXA48 <- glm(OXA48_gene ~ Amikacin + Cefotaxime + Gentamicin + Imipenem +
