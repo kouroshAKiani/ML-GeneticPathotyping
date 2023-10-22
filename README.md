@@ -27,29 +27,7 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 
 ## Requirements
 
-The method is developed in R (4.2.2) and Python (3.7) and the following packages can be installed as follow in R:
-
-```bash
-install_and_load_package <- function(package) {
-  if (!(package %in% installed.packages()[,"Package"])) {
-    install.packages(package)
-  }
-  library(package, character.only = TRUE)
-}
-
-required_packages <- c(
-  "readxl", "gbm", "DiagrammeR", "DiagrammeRsvg", "Rcpp", "rpart",
-  "rpart.plot", "randomForest", "corrplot", "ModelMetrics", "ROCR", "caret",
-  "mlbench", "kernlab", "e1071", "MASS", "klaR", "dplyr", "naivebayes",
-  "DescTools", "pROC", "rsample", "titanic", "funModeling", "GA", "DALEX", "optparse",
-  "plotly", "ggplot2", "smotefamily", "ingredients","r2d3","ROSE", "patchwork", "devtools", "ggpubr",
-  "catboost", "devEMF"
-)
-
-for (package in required_packages) {
-  install_and_load_package(package)
-}
-```
+The method is developed in R (4.2.2) and Python (3.7). You should save Packages_Installation.R file in your directory alongside other R files for genes and pathotypes. By executing each file for prediction of a gene / pathotype, required packages will be installed and called.
 
 ## Installation
 
