@@ -27,7 +27,7 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 
 ## Requirements
 
-The method is developed in R (4.2.2) and Python (3.7). You should save Packages_Installation.R file in your directory alongside other R files for genes and pathotypes. By executing each file for prediction of a gene / pathotype, required packages will be installed and called.
+The method is developed in R (4.2.2) and Python (3.7). You should save Packages_installation.R file in your directory alongside other R files for genes and pathotypes. By executing each file for prediction of a gene / pathotype, required packages will be installed and called.
 
 ## Installation
 
