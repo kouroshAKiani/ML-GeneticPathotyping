@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 source('F1-score.R') # Call F1-Score function for computing point estimation and its 95% confidence interval
 
 source('compute_metrics.R') # Call compute_metrics function for computing all classification metrics and their confidence interval.
 
 source('Packages_installation.R') # Installation of all required packages
-=======
-source('F1-score.R')
-source('compute_metrics.R')
->>>>>>> c18c5be1391a6c1982e85029db52adc20aff265f
 
 parser <- OptionParser(option_list = list(
   make_option(c("-f", "--file_path"), type="character", help="The file path of the data file."),
