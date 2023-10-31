@@ -84,7 +84,7 @@ For example if the antibiotic(s) combination selected through the model-agnostic
 ```bash
    Rscript blaSHV.R -f mach-learn.xlsx -t "model_evaluation" -o "LR-model agnostic/Wald test"
 ```
-We should emphasize that computation of confidence interval for F1-Score for multi-class classification has been done by [1]. By getting inspiration from this work and applying some changes to their computations, we can extract a function for computation of F1-Score and its confidence interval in a binary classification that is provided in F1-score.R file.
+We should emphasize that computation of confidence interval for F1-Score for multi-class classification has been computed by [1]. By getting inspiration from this work and applying some changes to their computations, we can extract a function for computation of F1-Score and its confidence interval in a binary classification that is provided in F1-score.R file.
 
 ## Results
 
