@@ -16,3 +16,4 @@ compute_metrics <- function(confusion_matrix) {
   )
   
   return(result)
+}
