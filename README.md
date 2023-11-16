@@ -69,7 +69,7 @@ for example if you want to review the results of Pearson's Chi-Squared test in t
 ```
 
 ### 3. Model training and evaluation:
-In order to investigate ML models performance that are reported in tables 2 to 11 in the article, you should choose the algorithm and the feature selection methods based on the intended antibiotic(s) combination. For this purpose you should follow below command in your command-line:
+In order to investigate ML models performance that are reported in tables 1 and 2 in the article, you should choose the algorithm and the feature selection methods based on the intended antibiotic(s) combination. For this purpose you should follow below command in your command-line:
 
 ```bash
    Rscript blaSHV.R -f mach-learn.xlsx -t "model_evaluation" -o "algorithm name-feature selection method name"
@@ -88,7 +88,7 @@ We should emphasize that computation of confidence interval for F1-Score for mul
 
 ## Results
 
-Performance of all the models based on the sensitivity, precision, and F1-Score are represented in the tables 2 to 11. Additionally, feature importance analysis based on the model-agnostic approach (through DALEX package), residual distribution, precision-recall curves, and the data distribution figures, reported in the article, are available in feature-importance.R, 3-plots.R, and data-disturb.py files, respectively.
+Performance of all the models based on the sensitivity, precision, and F1-Score are evaluated as mentioned in part 3. Additionally, feature importance analysis based on the model-agnostic approach (through DALEX package), residual distribution, precision-recall curves, and the data distribution figures, reported in the article, are available in feature-importance.R, 3-plots.R, and data-disturb.py files, respectively.
 
 ## Authors
 
