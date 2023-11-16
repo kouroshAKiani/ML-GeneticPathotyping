@@ -1,6 +1,6 @@
 # Antimicrobial Resistance Gene and Pathotype Prediction
 
-This repository contains code and resources for predicting and classifying antimicrobial resistance (AMR) genes and pathotypes based on antibiotic susceptibility data through R. Moreover, data distribution in section 2 of the article is visualized through Python. We employ multiple machine learning algorithms, including Logistic Regression (LR), Naive Bayes Classifier (NBC), Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), and CatBoost, for the prediction and classification tasks. Additionally, we apply three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach using the DALEX package, to identify the most important antibiotics for each gene and pathotype prediction.
+This repository contains code and resources for predicting and classifying antimicrobial resistance (AMR) genes and pathotypes based on antibiotic susceptibility data through R. Moreover, the data distribution is visualized through Python. We employ multiple machine learning algorithms, including Logistic Regression (LR), Naive Bayes Classifier (NBC), Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), and CatBoost, for the prediction and classification tasks. Additionally, we apply three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach using the DALEX package, to identify the most important antibiotics for each gene and pathotype detection.
 
 ## Table of Contents
 
@@ -24,11 +24,11 @@ Antimicrobial resistance is a pressing global health concern. This project lever
 
 - **Feature Selection**: We offer three feature selection methods, including Pearson's Chi-Squared test, Wald test, and a model-agnostic approach through the DALEX package, to identify crucial antibiotics for gene and pathotype detection.
 
-- **Evaluation Metrics**: Due to our goal for predicting presence of genes or pathotypes, thus, Sensitivity, precision, and F1-Score are included to assess the performance of our models, ensuring reliable detections. However, other metrcis like Accuracy and Specificity are reported.
+- **Evaluation Metrics**: Due to our goal for predicting presence of genes or pathotypes, thus, Sensitivity, precision, and F1-Score are included to assess the performance of our models, ensuring reliable detections. However, other metrcis like Accuracy and Specificity are reported but they are not considered for models evaluations and decision making.
 
 ## Requirements
 
-The method is developed in R (4.2.2) and Python (3.9). You should save Packages_installation.R file in your directory alongside other R files for genes and pathotypes. By executing each file for prediction of a gene / pathotype, required packages will be installed and called.
+The method is developed in R (4.2.2) and Python (3.9). You should save Packages_installation.R (for required packages installations), compute_metrics.R (for model evaluation metrics) , and F1-score.R (for confidence interval computation of F1-Score) files in the same directory that other genes/pathotypes files that are going to be saved. 
 
 ## Installation
 
@@ -40,7 +40,7 @@ To get started with this repository, clone the repository to your local machine:
 
 ## Usage
 ### 1. Preparation:
- Download the dataset (mach-learn.xlsx) and the code files in your directory. Change your work directory to the path that the files and dataset have been saved:
+ Download the dataset (mach-learn.xlsx) and save it in the same directory that the other files have been saved. Change your work directory to the path that the files and dataset have been saved:
 
 ```bash
     cd /path/to/your_directory
@@ -53,7 +53,7 @@ To get started with this repository, clone the repository to your local machine:
    Rscript gene/pathotype name.R -f mach-learn.xlsx -t "feature_selection" -m "feature selection method"
 ```
 
-For example if you want to inspect model-agnostic approach in LR for prediction of blaOXA-48, you should execute following command in your command-line (terminal):
+For example if you want to examine model-agnostic approach in LR for prediction of blaOXA-48, you should execute following command in your command-line (terminal):
  
 ```bash
    Rscript blaOXA-48.R -f mach-learn.xlsx -t "feature_selection" -m "model agnostic-LR"
@@ -88,7 +88,7 @@ We should emphasize that computation of confidence interval for F1-Score for mul
 
 ## Results
 
-Performance of all the models based on the sensitivity, precision, and F1-Score are represented in the tables 2 to 11. Additionally, 
+Performance of all the models based on the sensitivity, precision, and F1-Score are represented in the tables 2 to 11. Additionally, feature importance analysis based on the model-agnostic approach (through DALEX package), residual distribution, precision-recall curves, and the data distribution figures, reported in the article, are available in feature-importance.R, 3-plots.R, and data-disturb.py files, respectively.
 
 ## Authors
 
